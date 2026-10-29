@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://rlc3024scn"]
+
+[ext_resource type="Script" uid="uid://bg4ofkikvwgny" path="res://Script/relic/YerCekimi.gd" id="1_rlc23"]
+[ext_resource type="Texture2D" uid="uid://dxobff3hkc6uv" path="res://Sprite/denemechest-open.png" id="2_lvtxy"]
+
+[node name="YerCekimi" type="Node2D" unique_id=1967967883]
+script = ExtResource("1_rlc23")
+relic_isim = "YerCekimi"
+relic_aciklama = "Donuste +40 enerji ama vurum maliyeti +5 artar."
+yuzey_enerji_aktif = true
+yuzey_donuste_enerji = 40
+vurus_maliyet_aktif = true
+vurus_maliyet_degisim = 5
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1659029481]
+modulate = Color(1, 0.25, 0, 1)
+texture = ExtResource("2_lvtxy")
+hframes = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1059157773]

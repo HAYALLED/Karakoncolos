@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://tr0011scn80"]
+
+[ext_resource type="Script" path="res://Script/trait/TraitHantal.gd" id="1_trs11"]
+
+[node name="TraitHantal" type="Node"]
+script = ExtResource("1_trs11")
+pozitif_mi = false
+normal_cikarma_bedeli = 15
+yapisik_cikarma_bedeli = 30
+isabet_kaybi_sansi = 0.2
+trait_isim = "Hantal"
+trait_aciklama = "Savasta yuzde 20 ihtimalle kendi saldirini iskalarsin."

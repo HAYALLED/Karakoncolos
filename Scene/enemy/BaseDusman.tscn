@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://da3wrbj8d4xci"]
+
+[ext_resource type="Script" uid="uid://cwa6rnfp3wb51" path="res://Script/BaseDusman.gd" id="1_rh6ur"]
+[ext_resource type="Texture2D" uid="uid://drkb80ev72gmh" path="res://Sprite/icon.svg" id="2_fdufx"]
+
+[node name="BaseDusman" type="Node2D" unique_id=548281646]
+script = ExtResource("1_rh6ur")
+dusman_isim = "deneme Düşman"
+sprite_texture = ExtResource("2_fdufx")
+saldiri = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1984584751]
+modulate = Color(2.2666645, 0.7922425, 0.7922425, 1)
+texture = ExtResource("2_fdufx")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=821952532]

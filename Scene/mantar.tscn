@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bintjlqvc1oqi"]
+
+[ext_resource type="Texture2D" uid="uid://drkb80ev72gmh" path="res://Sprite/icon.svg" id="1_swq62"]
+[ext_resource type="Script" uid="uid://bovhej67wxnlr" path="res://Script/mantar.gd" id="1_yru1c"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yru1c"]
+radius = 13.038404
+
+[node name="Mantar" type="Area2D" unique_id=567712394]
+z_index = 2
+script = ExtResource("1_yru1c")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1004473574]
+modulate = Color(1, 0.27450982, 1, 1)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_swq62")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=75932841]
+shape = SubResource("CircleShape2D_yru1c")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

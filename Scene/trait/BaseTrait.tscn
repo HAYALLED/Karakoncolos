@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dx655ougfprn0"]
+
+[ext_resource type="Script" uid="uid://bl0sd1fr2s2er" path="res://Script/trait/BaseTrait.gd" id="1_52wl3"]
+
+[node name="BaseTrait" type="Node" unique_id=1309457609]
+script = ExtResource("1_52wl3")

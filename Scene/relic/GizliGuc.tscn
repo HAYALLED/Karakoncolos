@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://rlc3023scn"]
+
+[ext_resource type="Script" uid="uid://bvur26ryhy5ho" path="res://Script/relic/GizliGuc.gd" id="1_rlc22"]
+[ext_resource type="Texture2D" uid="uid://dxobff3hkc6uv" path="res://Sprite/denemechest-open.png" id="2_s2u2h"]
+
+[node name="GizliGuc" type="Node2D" unique_id=1843573322]
+script = ExtResource("1_rlc22")
+relic_isim = "GizliGuc"
+relic_aciklama = "Vurum maliyeti -4 ama yuzeye cikista -10 enerji."
+yuzey_enerji_aktif = true
+yuzey_cikista_enerji = -10
+vurus_maliyet_aktif = true
+vurus_maliyet_degisim = -4
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1813535302]
+modulate = Color(1, 0.25, 0, 1)
+texture = ExtResource("2_s2u2h")
+hframes = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1189477789]

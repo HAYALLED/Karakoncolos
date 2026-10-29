@@ -1,0 +1,63 @@
+Temel Oyun Döngüsü
+
+köke hasar verince belli olasılık ile Yaşam Özü düşürme olasılığı
+
+Koloni & Kaynak
+
+Bebek sistemi — çalma, göreve gönderme (taş/odun/mantar toplama)
+Tüccar sistemi (Yaşam Özü ile alışveriş)
+
+
+Event Sistemi
+
+EventYoneticisi — zamanlı tetikleyici (yeraltına iniş, yüzeye çıkış)
+CombatEvent — tur bazlı savaş {loop hero tarzı}
+CanVermeEvent / CanKaybiEvent {bu event tetiklendiğinde ağaç ve player hasar/can alır[ama az zararla veya en çok şifa ile ağaç önde olacak şekilde ayarlandı]}
+KoyBaskiniEvent — köy baskını ekipman/eşya çalma & bebek kaçırma [hoş bebek kaçırma olasılığı 0,0005 olması lazım çok düşükte olsa var]
+Sandık (ismi ChestEvent) — random loot alma {veya hiçbirşey almama}
+
+Trait Sistemi (Darkest Dungeon benzeri)
+
+BaseTrait + TraitYoneticisi
+Pozitif traitler — kilitlenebilir (Yaşam Özü ile)
+Negatif traitler — yapışık (sticky) sistemi, gün sayacı
+2 pozitif / 2 negatif slot sınırı
+
+Relic Sistemi (Slay the Spire benzeri)
+
+BaseRelic — extend edilebilir artifact yapısı
+Kökten drop şansı (inspector'dan ayarlanabilir)
+Tur başı / yüzeye çıkış / mağaraya dönüş hook'ları
+Kabul/ret UI, hurdaya çıkarma mekaniği
+24 farklı relic (flat buff / trade-off tipler)
+
+Kozmetik Sistem
+
+4 slot: Şapka, Gövde, Pantalon, Ayakkabı
+Sprite2D child node'ları — runtime texture swap
+
+Karakter Ekranı (Tab)
+
+Enerji, Yaşam Özü göstergesi
+Relic listesi (scroll destekli)
+Trait listesi — kilitleme/silme butonları
+Kozmetik slot özeti
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bu6ghemidy38u"]
+
+[ext_resource type="Script" uid="uid://bawjh51kpmbrg" path="res://Script/tas.gd" id="1_4f723"]
+[ext_resource type="Texture2D" uid="uid://drkb80ev72gmh" path="res://Sprite/icon.svg" id="2_u7bu2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yru1c"]
+radius = 13.038404
+
+[node name="Tas" type="Area2D" unique_id=567712394]
+z_index = 2
+script = ExtResource("1_4f723")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1004473574]
+modulate = Color(1, 0.9535, 0.06999999, 1)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_u7bu2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=75932841]
+shape = SubResource("CircleShape2D_yru1c")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

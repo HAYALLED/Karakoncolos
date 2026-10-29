@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://rlc3007scn"]
+
+[ext_resource type="Script" uid="uid://c5ugwqxnnwj7l" path="res://Script/relic/EskiBalta.gd" id="1_rlc06"]
+[ext_resource type="Texture2D" uid="uid://dxobff3hkc6uv" path="res://Sprite/denemechest-open.png" id="2_5sqdi"]
+
+[node name="EskiBalta" type="Node2D" unique_id=1286198995]
+script = ExtResource("1_rlc06")
+relic_isim = "EskiBalta"
+relic_aciklama = "Eski balta agzina asinasın, daha az yorulursun. -3"
+vurus_maliyet_aktif = true
+vurus_maliyet_degisim = -3
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=247504998]
+modulate = Color(1, 0.25, 0, 1)
+texture = ExtResource("2_5sqdi")
+hframes = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1142811884]

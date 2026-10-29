@@ -1,0 +1,144 @@
+[gd_scene format=3 uid="uid://cvyb7acyfmkor"]
+
+[ext_resource type="Texture2D" uid="uid://drkb80ev72gmh" path="res://Sprite/icon.svg" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://dj4vwsknfdo8a" path="res://Script/player.gd" id="1_onrkg"]
+[ext_resource type="PackedScene" uid="uid://gby8u7r2r4l5" path="res://Scene/TraitYoneticisi.tscn" id="3_xa75v"]
+[ext_resource type="PackedScene" uid="uid://bqamitikt32c1" path="res://Scene/Karakterekrani.tscn" id="4_58ae2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_onrkg"]
+size = Vector2(126, 126)
+
+[node name="Karakoncolos" type="CharacterBody2D" unique_id=723900462]
+process_mode = 3
+z_index = 1
+script = ExtResource("1_onrkg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=17907702]
+texture = ExtResource("1_4flbx")
+
+[node name="Sapka" type="Sprite2D" parent="Sprite2D" unique_id=1754368999]
+position = Vector2(0, -20)
+
+[node name="Govde" type="Sprite2D" parent="Sprite2D" unique_id=1172624873]
+
+[node name="Pantalon" type="Sprite2D" parent="Sprite2D" unique_id=914764914]
+position = Vector2(0, 15)
+
+[node name="Ayakkabi" type="Sprite2D" parent="Sprite2D" unique_id=471767024]
+position = Vector2(0, 25)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1957203161]
+shape = SubResource("RectangleShape2D_onrkg")
+
+[node name="Arayuz" type="CanvasLayer" parent="." unique_id=451334556]
+
+[node name="MantarYazisi" type="Label" parent="Arayuz" unique_id=435085401]
+visible = false
+offset_left = 129.0
+offset_top = 68.0
+offset_right = 169.0
+offset_bottom = 91.0
+text = "Mantar: 0"
+
+[node name="TasYazisi" type="Label" parent="Arayuz" unique_id=2005577121]
+visible = false
+offset_left = 129.0
+offset_top = 48.0
+offset_right = 173.0
+offset_bottom = 71.0
+text = "Tas: 0"
+
+[node name="GunYazisi" type="Label" parent="Arayuz" unique_id=1752777433]
+offset_left = 1078.0
+offset_top = 612.0
+offset_right = 1118.0
+offset_bottom = 635.0
+text = "Gun"
+
+[node name="DuraklatmaMenusu" type="ColorRect" parent="Arayuz" unique_id=153275779]
+process_mode = 3
+visible = false
+modulate = Color(1, 1, 1, 0.2627451)
+offset_right = 1152.0
+offset_bottom = 650.0
+
+[node name="DevamButonu" type="Button" parent="Arayuz/DuraklatmaMenusu" unique_id=1371945594]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 491.0
+offset_top = 218.0
+offset_right = 690.0
+offset_bottom = 287.0
+text = "Devam Et"
+
+[node name="AnaMenuButonu" type="Button" parent="Arayuz/DuraklatmaMenusu" unique_id=1556623448]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 491.0
+offset_top = 300.0
+offset_right = 690.0
+offset_bottom = 369.0
+text = "Ana Menuye Dön"
+
+[node name="EnvanterPaneli" type="PanelContainer" parent="Arayuz" unique_id=2001456716]
+offset_left = 434.0
+offset_top = 601.0
+offset_right = 750.0
+offset_bottom = 641.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Arayuz/EnvanterPaneli" unique_id=2029170161]
+layout_mode = 2
+
+[node name="MantarSlot" type="TextureRect" parent="Arayuz/EnvanterPaneli/HBoxContainer" unique_id=752210601]
+visible = false
+modulate = Color(1, 0.120000005, 0.120000005, 1)
+layout_mode = 2
+texture = ExtResource("1_4flbx")
+expand_mode = 2
+
+[node name="Label" type="Label" parent="Arayuz/EnvanterPaneli/HBoxContainer/MantarSlot" unique_id=2099112749]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="OdunSlot" type="TextureRect" parent="Arayuz/EnvanterPaneli/HBoxContainer" unique_id=1102148782]
+visible = false
+modulate = Color(1, 0.120000005, 0.120000005, 1)
+layout_mode = 2
+texture = ExtResource("1_4flbx")
+expand_mode = 2
+
+[node name="Label" type="Label" parent="Arayuz/EnvanterPaneli/HBoxContainer/OdunSlot" unique_id=1955804342]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="TasSlot" type="TextureRect" parent="Arayuz/EnvanterPaneli/HBoxContainer" unique_id=1081981594]
+visible = false
+layout_mode = 2
+texture = ExtResource("1_4flbx")
+expand_mode = 2
+
+[node name="Label" type="Label" parent="Arayuz/EnvanterPaneli/HBoxContainer/TasSlot" unique_id=909717766]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="RelicContainer" type="HBoxContainer" parent="Arayuz/EnvanterPaneli" unique_id=1644466480]
+layout_mode = 2
+
+[node name="EnerjiYazisi" type="Label" parent="Arayuz" unique_id=1479509866]
+offset_left = 131.0
+offset_top = 91.0
+offset_right = 236.0
+offset_bottom = 114.0
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=277073228]
+position_smoothing_enabled = true
+
+[node name="TraitYoneticisi" parent="." unique_id=19416012 instance=ExtResource("3_xa75v")]
+
+[node name="KarakterEkrani" parent="." unique_id=281157950 instance=ExtResource("4_58ae2")]
+
+[connection signal="pressed" from="Arayuz/DuraklatmaMenusu/DevamButonu" to="." method="_on_devam_butonu_pressed"]
+[connection signal="pressed" from="Arayuz/DuraklatmaMenusu/AnaMenuButonu" to="." method="_on_ana_menu_butonu_pressed"]

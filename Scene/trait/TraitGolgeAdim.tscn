@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://tr0008scn59"]
+
+[ext_resource type="Script" path="res://Script/trait/TraitGolgeAdim.gd" id="1_trs08"]
+
+[node name="TraitGolgeAdim" type="Node"]
+script = ExtResource("1_trs08")
+kilit_bedeli = 6
+hareket_hizi_bonus = 150.0
+trait_isim = "Golge Adim"
+trait_aciklama = "Yuzeyde hareket hizin artar."

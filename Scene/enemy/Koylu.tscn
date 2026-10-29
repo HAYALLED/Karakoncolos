@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dsm4000scn"]
+
+[ext_resource type="Script" uid="uid://7ooyfma3kcrc" path="res://Script/enemy/Koylu.gd" id="1_dsm00"]
+[ext_resource type="Texture2D" uid="uid://drkb80ev72gmh" path="res://Sprite/icon.svg" id="2_wipcj"]
+
+[node name="Koylu" type="Node2D" unique_id=199151653]
+script = ExtResource("1_dsm00")
+dusman_isim = "Koylu"
+max_can = 20
+saldiri = 4
+enerji_cezasi = 10
+odul_listesi = Array[Dictionary]([{
+"kaynak": "odun",
+"max": 3,
+"min": 1
+}])
+dusman_aciklama = "Karakoncolosun yolunu kesmek için çapasını kaldırdı. Çok da akıllıca değildi."
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=368437802]
+modulate = Color(2.2666645, 0.7922425, 0.7922425, 1)
+texture = ExtResource("2_wipcj")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1637197195]

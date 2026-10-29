@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://qprtitxivb4c"]
+
+[ext_resource type="Texture2D" uid="uid://drkb80ev72gmh" path="res://Sprite/icon.svg" id="1_8gfwh"]
+[ext_resource type="Script" uid="uid://c75jsruxpcufb" path="res://Script/magara_girisi.gd" id="1_q3u11"]
+[ext_resource type="PackedScene" uid="uid://t62jdrm3m41t" path="res://Scene/EventYoneticisi.tscn" id="3_l6min"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q3u11"]
+size = Vector2(128, 201)
+
+[node name="MagaraGirisi" type="Area2D" unique_id=1003974218]
+script = ExtResource("1_q3u11")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=142815256]
+modulate = Color(0.094504826, 0.17224872, 0.22421551, 1)
+position = Vector2(-1, 2)
+scale = Vector2(1, 1.5546875)
+texture = ExtResource("1_8gfwh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=370308775]
+position = Vector2(-1, 2)
+shape = SubResource("RectangleShape2D_q3u11")
+
+[node name="EventYoneticisi" parent="." unique_id=281603045 instance=ExtResource("3_l6min")]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

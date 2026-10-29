@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://tr0004scn31"]
+
+[ext_resource type="Script" path="res://Script/trait/TraitCelikDeri.gd" id="1_trs04"]
+
+[node name="TraitCelikDeri" type="Node"]
+script = ExtResource("1_trs04")
+kilit_bedeli = 10
+hasar_degisim_yuzde = 0.25
+trait_isim = "Celik Deri"
+trait_aciklama = "Savasta gelen hasarin yuzde 25i emilir."

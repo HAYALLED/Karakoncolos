@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://tr0012scn87"]
+
+[ext_resource type="Script" path="res://Script/trait/TraitKanTadi.gd" id="1_trs12"]
+
+[node name="TraitKanTadi" type="Node"]
+script = ExtResource("1_trs12")
+kilit_bedeli = 15
+kan_tadi_aktif = true
+kan_tadi_enerji = 20
+trait_isim = "Kan Tadi"
+trait_aciklama = "Dusmani oldurdugunde +20 enerji kazanirsin."

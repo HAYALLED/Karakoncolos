@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://ko00001scn20"]
+
+[ext_resource type="Script" uid="uid://bwdohrqh3uf7f" path="res://Script/cosmetic/TestGovde.gd" id="1_koz01"]
+[ext_resource type="Texture2D" uid="uid://drkb80ev72gmh" path="res://Sprite/icon.svg" id="2_cgt5x"]
+
+[node name="TestGovde" type="Node2D" unique_id=1422111920]
+script = ExtResource("1_koz01")
+kozmetik_isim = "Test Govde"
+slot = "govde"
+on_texture = ExtResource("2_cgt5x")

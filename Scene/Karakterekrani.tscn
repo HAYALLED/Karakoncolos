@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://bqamitikt32c1"]
+
+[ext_resource type="Script" uid="uid://bdekb41iyvcu0" path="res://Script/Karakterekrani.gd" id="1_lpm6f"]
+
+[node name="Karakterekrani" type="Control" unique_id=281157950]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lpm6f")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=146446710]
+
+[node name="tam ekran" type="Control" parent="CanvasLayer" unique_id=516251839]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="arkaplan" type="ColorRect" parent="CanvasLayer/tam ekran" unique_id=1075991611]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ana layout" type="VBoxContainer" parent="CanvasLayer/tam ekran" unique_id=89009567]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="üst bar" type="HBoxContainer" parent="CanvasLayer/tam ekran/ana layout" unique_id=107012981]
+layout_mode = 2
+
+[node name="EnerjiYazisi" type="Label" parent="CanvasLayer/tam ekran/ana layout/üst bar" unique_id=19643784]
+layout_mode = 2
+
+[node name="YasamOzuYazisi" type="Label" parent="CanvasLayer/tam ekran/ana layout/üst bar" unique_id=52784032]
+layout_mode = 2
+
+[node name="orta" type="HBoxContainer" parent="CanvasLayer/tam ekran/ana layout" unique_id=117223264]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PozitifKutu" type="VBoxContainer" parent="CanvasLayer/tam ekran/ana layout/orta" unique_id=852141381]
+layout_mode = 2
+
+[node name="MerkezKutu" type="VBoxContainer" parent="CanvasLayer/tam ekran/ana layout/orta" unique_id=1314145694]
+layout_mode = 2
+
+[node name="NegatifKutu" type="VBoxContainer" parent="CanvasLayer/tam ekran/ana layout/orta" unique_id=1613910284]
+layout_mode = 2
+
+[node name="KodeksTab" type="TabContainer" parent="CanvasLayer/tam ekran/ana layout" unique_id=1570857334]
+custom_minimum_size = Vector2(0, 180)
+layout_mode = 2
+current_tab = 0
+
+[node name="Esya Kitapligi" type="ScrollContainer" parent="CanvasLayer/tam ekran/ana layout/KodeksTab" unique_id=1486321001]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="EsyaListe" type="VBoxContainer" parent="CanvasLayer/tam ekran/ana layout/KodeksTab/Esya Kitapligi" unique_id=795330228]
+layout_mode = 2
+
+[node name="Dusman Kitapligi" type="ScrollContainer" parent="CanvasLayer/tam ekran/ana layout/KodeksTab" unique_id=132447931]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="DusmanListe" type="VBoxContainer" parent="CanvasLayer/tam ekran/ana layout/KodeksTab/Dusman Kitapligi" unique_id=927329988]
+layout_mode = 2

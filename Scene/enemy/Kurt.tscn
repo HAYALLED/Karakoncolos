@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dsm4006scn"]
+
+[ext_resource type="Script" uid="uid://c6gruhurhc0ia" path="res://Script/enemy/Kurt.gd" id="1_dsm06"]
+[ext_resource type="Texture2D" uid="uid://drkb80ev72gmh" path="res://Sprite/icon.svg" id="2_jjcab"]
+
+[node name="Kurt" type="Node2D" unique_id=264408735]
+script = ExtResource("1_dsm06")
+dusman_isim = "Kurt"
+max_can = 35
+saldiri = 9
+odul_listesi = Array[Dictionary]([{
+"kaynak": "odun",
+"max": 2,
+"min": 0
+}, {
+"kaynak": "mantar",
+"max": 2,
+"min": 1
+}])
+dusman_aciklama = "Sürüsü dağıldı. Sebebi ne olursa olsun bu yaratık ona yabancı değil."
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1906663719]
+modulate = Color(2.2666645, 0.7922425, 0.7922425, 1)
+texture = ExtResource("2_jjcab")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1809904768]

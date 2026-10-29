@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dsm4005scn"]
+
+[ext_resource type="Script" uid="uid://bm2mta5iqifma" path="res://Script/enemy/Geyik.gd" id="1_dsm05"]
+[ext_resource type="Texture2D" uid="uid://drkb80ev72gmh" path="res://Sprite/icon.svg" id="2_mjhj4"]
+
+[node name="Geyik" type="Node2D" unique_id=1453522666]
+script = ExtResource("1_dsm05")
+dusman_isim = "Geyik"
+saldiri = 6
+enerji_cezasi = 12
+odul_listesi = Array[Dictionary]([{
+"kaynak": "yasam_ozu",
+"max": 4,
+"min": 2
+}])
+dusman_aciklama = "Köylüler ona dokunmaz. Ama o karakoncolosun hayat ağacına yaklaşmasına izin vermez."
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2123355497]
+modulate = Color(2.2666645, 0.7922425, 0.7922425, 1)
+texture = ExtResource("2_mjhj4")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=535615434]

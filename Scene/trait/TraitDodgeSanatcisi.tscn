@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://tr0010scn73"]
+
+[ext_resource type="Script" path="res://Script/trait/TraitDodgeSanatcisi.gd" id="1_trs10"]
+
+[node name="TraitDodgeSanatcisi" type="Node"]
+script = ExtResource("1_trs10")
+kilit_bedeli = 12
+dodge_sansi = 0.2
+trait_isim = "Dodge Sanatcisi"
+trait_aciklama = "Savasta yuzde 20 ihtimalle dusmanin saldirisindan kacinarsin."

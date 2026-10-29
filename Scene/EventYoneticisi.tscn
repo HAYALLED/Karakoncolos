@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://t62jdrm3m41t"]
+
+[ext_resource type="Script" uid="uid://bi42dsqaqrpcq" path="res://Script/Event/EventYoneticisi.gd" id="1_3p1pc"]
+[ext_resource type="Script" uid="uid://c67gf4e4jnitl" path="res://Script/Event/ChestEvent.gd" id="2_rgdt5"]
+[ext_resource type="PackedScene" uid="uid://dxfvm13ceofji" path="res://Scene/Sandik.tscn" id="3_rgdt5"]
+[ext_resource type="Script" uid="uid://khj25n8dygom" path="res://Script/Event/CombatEvent.gd" id="4_t443t"]
+[ext_resource type="PackedScene" uid="uid://4euoscmjvdf2" path="res://Scene/Savas.tscn" id="5_paajw"]
+[ext_resource type="PackedScene" uid="uid://cvyb7acyfmkor" path="res://Scene/player.tscn" id="6_kf7j7"]
+[ext_resource type="PackedScene" uid="uid://da3wrbj8d4xci" path="res://Scene/enemy/BaseDusman.tscn" id="6_ohdiu"]
+[ext_resource type="Script" uid="uid://dmckg4il5hcj8" path="res://Script/Event/Cankaybievent.gd" id="8_lekmt"]
+[ext_resource type="PackedScene" uid="uid://dsm4002scn" path="res://Scene/enemy/Avci.tscn" id="8_sqo6j"]
+[ext_resource type="Script" uid="uid://b8rf2tjoscham" path="res://Script/Event/Canvermeevent.gd" id="9_bvnl3"]
+[ext_resource type="PackedScene" uid="uid://dsm4004scn" path="res://Scene/enemy/Ayi.tscn" id="9_npqku"]
+[ext_resource type="Script" uid="uid://npdmppb8udkx" path="res://Script/Event/Koybaskinievent.gd" id="10_koyb"]
+[ext_resource type="PackedScene" uid="uid://dsm4010scn" path="res://Scene/enemy/BozKurt.tscn" id="10_m642o"]
+[ext_resource type="PackedScene" uid="uid://dsm4001scn" path="res://Scene/enemy/Coban.tscn" id="11_uy5qw"]
+[ext_resource type="PackedScene" uid="uid://dsm4005scn" path="res://Scene/enemy/Geyik.tscn" id="12_g6qpy"]
+[ext_resource type="PackedScene" uid="uid://dsm4011scn" path="res://Scene/enemy/HumaKusu.tscn" id="13_f8ia2"]
+[ext_resource type="PackedScene" uid="uid://dsm4003scn" path="res://Scene/enemy/KoyBekcisi.tscn" id="14_kxew5"]
+[ext_resource type="PackedScene" uid="uid://dsm4000scn" path="res://Scene/enemy/Koylu.tscn" id="15_jcc5m"]
+[ext_resource type="PackedScene" uid="uid://dsm4006scn" path="res://Scene/enemy/Kurt.tscn" id="16_g3pds"]
+[ext_resource type="PackedScene" uid="uid://dsm4007scn" path="res://Scene/enemy/OrmanPerisi.tscn" id="17_lmkpl"]
+[ext_resource type="PackedScene" uid="uid://dsm4008scn" path="res://Scene/enemy/SuPerisi.tscn" id="18_lknid"]
+[ext_resource type="PackedScene" uid="uid://dsm401ascn" path="res://Scene/enemy/YelBaba.tscn" id="19_g7nsy"]
+[ext_resource type="Script" uid="uid://bo8tp1upowvo" path="res://Script/Event/KokRaidEvent.gd" id="23_npqku"]
+
+[node name="EventYoneticisi" type="Node" unique_id=281603045]
+script = ExtResource("1_3p1pc")
+
+[node name="ChestEvent" type="Node" parent="." unique_id=1864665306]
+script = ExtResource("2_rgdt5")
+sandik_sahnesi = ExtResource("3_rgdt5")
+
+[node name="CombatEvent" type="Node" parent="." unique_id=1194870299]
+script = ExtResource("4_t443t")
+savas_sahnesi = ExtResource("5_paajw")
+karakoncolos_sahnesi = ExtResource("6_kf7j7")
+dusman_sahneleri = Array[PackedScene]([ExtResource("6_ohdiu"), ExtResource("8_sqo6j"), ExtResource("9_npqku"), ExtResource("10_m642o"), ExtResource("11_uy5qw"), ExtResource("12_g6qpy"), ExtResource("13_f8ia2"), ExtResource("14_kxew5"), ExtResource("15_jcc5m"), ExtResource("16_g3pds"), ExtResource("17_lmkpl"), ExtResource("18_lknid"), ExtResource("19_g7nsy")])
+max_dusman = 3
+
+[node name="Cankaybievent" type="Node" parent="." unique_id=1860296202]
+script = ExtResource("8_lekmt")
+
+[node name="Canvermeevent" type="Node" parent="." unique_id=1143003842]
+script = ExtResource("9_bvnl3")
+
+[node name="Koybaskinievent" type="Node" parent="." unique_id=194738817]
+script = ExtResource("10_koyb")
+bebek_sansi = 0.0
+
+[node name="KokRaidEvent" type="Node" parent="." unique_id=1648410248]
+script = ExtResource("23_npqku")
+esik_75_dusmanlari = Array[PackedScene]([ExtResource("8_sqo6j"), ExtResource("14_kxew5"), ExtResource("15_jcc5m")])
+esik_50_dusmanlari = Array[PackedScene]([ExtResource("8_sqo6j"), ExtResource("8_sqo6j"), ExtResource("11_uy5qw")])
+esik_25_dusmanlari = Array[PackedScene]([ExtResource("8_sqo6j"), ExtResource("8_sqo6j"), ExtResource("8_sqo6j")])

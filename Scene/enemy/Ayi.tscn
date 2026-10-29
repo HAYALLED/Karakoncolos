@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dsm4004scn"]
+
+[ext_resource type="Script" uid="uid://cdwk6qe5vcljc" path="res://Script/enemy/Ayi.gd" id="1_dsm04"]
+[ext_resource type="Texture2D" uid="uid://drkb80ev72gmh" path="res://Sprite/icon.svg" id="2_0vatm"]
+
+[node name="Ayi" type="Node2D" unique_id=528595601]
+script = ExtResource("1_dsm04")
+dusman_isim = "Ayi"
+max_can = 60
+saldiri = 12
+enerji_cezasi = 25
+odul_listesi = Array[Dictionary]([{
+"kaynak": "mantar",
+"max": 4,
+"min": 2
+}, {
+"kaynak": "yasam_ozu",
+"max": 2,
+"min": 1
+}])
+dusman_aciklama = "Kışın ortasında uyandırıldı. Bu hatayı kim yaptıysa pişman olacak."
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=287549949]
+modulate = Color(2.2666645, 0.7922425, 0.7922425, 1)
+texture = ExtResource("2_0vatm")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1649627104]

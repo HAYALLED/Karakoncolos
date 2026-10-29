@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://c2snufqcntvss"]
+
+[ext_resource type="Script" uid="uid://bbffn5sjbbvgq" path="res://Script/cosmetic/Basekozmetik.gd" id="1_jh4eb"]
+
+[node name="Basekozmetik" type="Node" unique_id=1984531686]
+script = ExtResource("1_jh4eb")

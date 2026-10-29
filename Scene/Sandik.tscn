@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://dxfvm13ceofji"]
+
+[ext_resource type="Script" uid="uid://3r3o2lx4jnfb" path="res://Script/Sandik.gd" id="1_681dp"]
+[ext_resource type="Texture2D" uid="uid://dxobff3hkc6uv" path="res://Sprite/denemechest-open.png" id="2_u6pkb"]
+
+[sub_resource type="Animation" id="Animation_oajgh"]
+length = 1.8666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel/Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.36666667, 0.76666665, 1.1666666),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="Animation" id="Animation_u6pkb"]
+resource_name = "ac"
+length = 0.7
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel/Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.36666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_oajgh"]
+_data = {
+&"RESET": SubResource("Animation_oajgh"),
+&"ac": SubResource("Animation_u6pkb")
+}
+
+[node name="Sandik" type="Control" unique_id=409533236]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_681dp")
+
+[node name="Panel" type="Panel" parent="." unique_id=1436085900]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BaslikYazisi" type="Label" parent="Panel" unique_id=293458977]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Panel" unique_id=1446328351]
+position = Vector2(574.99994, 324.00003)
+scale = Vector2(71.875, 40.25)
+texture = ExtResource("2_u6pkb")
+hframes = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Panel" unique_id=188513670]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_oajgh")
+
+[node name="LootYazisi" type="Label" parent="Panel" unique_id=308339373]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0

@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://tr0013scn94"]
+
+[ext_resource type="Script" path="res://Script/trait/TraitEnerjiSizintisi.gd" id="1_trs13"]
+
+[node name="TraitEnerjiSizintisi" type="Node"]
+script = ExtResource("1_trs13")
+pozitif_mi = false
+normal_cikarma_bedeli = 18
+yapisik_cikarma_bedeli = 35
+tur_basi_enerji_aktif = true
+tur_basi_enerji = -3
+trait_isim = "Enerji Sizintisi"
+trait_aciklama = "Savasta her turda -3 enerji sizar."

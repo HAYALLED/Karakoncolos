@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://qajb02j6bxo3"]
+
+[ext_resource type="Script" uid="uid://dfi0j8tkln82u" path="res://Script/yeryuzune_cikis.gd" id="1_ysp7y"]
+[ext_resource type="Texture2D" uid="uid://drkb80ev72gmh" path="res://Sprite/icon.svg" id="2_l60hc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bbkti"]
+size = Vector2(124, 130)
+
+[node name="YeryuzuneCikis" type="Area2D" unique_id=1142466474]
+script = ExtResource("1_ysp7y")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1982269422]
+modulate = Color(0.98845476, 0.785533, 0.7741025, 1)
+position = Vector2(6, 4)
+texture = ExtResource("2_l60hc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1348025359]
+position = Vector2(6, 1)
+shape = SubResource("RectangleShape2D_bbkti")
+
+[node name="MekanArayuz" type="CanvasLayer" parent="." unique_id=1538619918]
+
+[node name="MekanPaneli" type="ColorRect" parent="MekanArayuz" unique_id=1432030222]
+offset_left = 201.0
+offset_top = 71.0
+offset_right = 891.0
+offset_bottom = 518.0
+color = Color(0.14, 0.14, 0.14, 1)
+
+[node name="ListeKutusu" type="VBoxContainer" parent="MekanArayuz/MekanPaneli" unique_id=1202762758]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 316.0
+offset_bottom = 59.0
+alignment = 1
+
+[node name="BilgiYazisi" type="Label" parent="MekanArayuz/MekanPaneli" unique_id=1108560304]
+layout_mode = 0
+offset_left = 324.0
+offset_top = 377.0
+offset_right = 364.0
+offset_bottom = 400.0
+
+[node name="PromptYazisi" type="Label" parent="." unique_id=1499457983]
+visible = false
+offset_left = -35.0
+offset_top = -92.0
+offset_right = 43.0
+offset_bottom = -69.0
+text = "F: Yola Çık"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

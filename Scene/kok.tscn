@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://dcwerwiicu5kw"]
+
+[ext_resource type="Script" uid="uid://8k8dhc8gljke" path="res://Script/kok.gd" id="1_fiya0"]
+[ext_resource type="Texture2D" uid="uid://drkb80ev72gmh" path="res://Sprite/icon.svg" id="1_irq5r"]
+[ext_resource type="PackedScene" uid="uid://cowtvkg3p0ynw" path="res://Scene/relic/BaseRelic.tscn" id="2_ppxfx"]
+[ext_resource type="PackedScene" uid="uid://rlc3004scn" path="res://Scene/relic/AcikHava.tscn" id="3_fmv7q"]
+[ext_resource type="PackedScene" uid="uid://rlc3017scn" path="res://Scene/relic/AgirSilah.tscn" id="4_4f2v1"]
+[ext_resource type="PackedScene" uid="uid://rlc3001scn" path="res://Scene/relic/CanliKan.tscn" id="5_43op2"]
+[ext_resource type="PackedScene" uid="uid://rlc3014scn" path="res://Scene/relic/CelikYumruk.tscn" id="6_f3xjf"]
+[ext_resource type="PackedScene" uid="uid://rlc3002scn" path="res://Scene/relic/DemirNefes.tscn" id="7_60f46"]
+[ext_resource type="PackedScene" uid="uid://rlc3012scn" path="res://Scene/relic/DerinKes.tscn" id="8_idpy5"]
+[ext_resource type="PackedScene" uid="uid://rlc302ascn" path="res://Scene/relic/EnerjiBomba.tscn" id="9_nu7pk"]
+[ext_resource type="PackedScene" uid="uid://rlc3007scn" path="res://Scene/relic/EskiBalta.tscn" id="10_fjjdm"]
+[ext_resource type="PackedScene" uid="uid://rlc3023scn" path="res://Scene/relic/GizliGuc.tscn" id="11_p37hy"]
+[ext_resource type="PackedScene" uid="uid://rlc3011scn" path="res://Scene/relic/GucluKol.tscn" id="12_vqi24"]
+[ext_resource type="PackedScene" uid="uid://rlc3015scn" path="res://Scene/relic/HizliTirmanma.tscn" id="13_uqyxn"]
+[ext_resource type="PackedScene" uid="uid://rlc3020scn" path="res://Scene/relic/KanEfsunu.tscn" id="14_sfoj3"]
+[ext_resource type="PackedScene" uid="uid://rlc301ascn" path="res://Scene/relic/KanliPencere.tscn" id="15_0hw64"]
+[ext_resource type="PackedScene" uid="uid://rlc3013scn" path="res://Scene/relic/KanliRitim.tscn" id="16_2wfws"]
+[ext_resource type="PackedScene" uid="uid://rlc3006scn" path="res://Scene/relic/KaranlikHuzur.tscn" id="17_k4d8w"]
+[ext_resource type="PackedScene" uid="uid://rlc3010scn" path="res://Scene/relic/KeskinTas.tscn" id="18_6j5dg"]
+[ext_resource type="PackedScene" uid="uid://rlc3021scn" path="res://Scene/relic/Korku.tscn" id="19_qje0x"]
+[ext_resource type="PackedScene" uid="uid://rlc3005scn" path="res://Scene/relic/KoyKokusu.tscn" id="20_nb1ec"]
+[ext_resource type="PackedScene" uid="uid://rlc3003scn" path="res://Scene/relic/SabahRuzu.tscn" id="21_dbjyd"]
+[ext_resource type="PackedScene" uid="uid://rlc3022scn" path="res://Scene/relic/SavasCilgini.tscn" id="22_cs0p7"]
+[ext_resource type="PackedScene" uid="uid://rlc3016scn" path="res://Scene/relic/TopragiYiyen.tscn" id="23_t4w73"]
+[ext_resource type="PackedScene" uid="uid://rlc3018scn" path="res://Scene/relic/VahsiGuc.tscn" id="24_q6p8g"]
+[ext_resource type="PackedScene" uid="uid://rlc3008scn" path="res://Scene/relic/YagliSap.tscn" id="25_q87ku"]
+[ext_resource type="PackedScene" uid="uid://rlc3024scn" path="res://Scene/relic/YerCekimi.tscn" id="26_t87cs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fiya0"]
+size = Vector2(125, 129)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rsync"]
+size = Vector2(259, 189)
+
+[node name="Kok" type="StaticBody2D" unique_id=1833436329]
+collision_layer = 0
+collision_mask = 0
+script = ExtResource("1_fiya0")
+relic_drop_sansi = 0.5
+relic_havuzu = Array[PackedScene]([ExtResource("2_ppxfx"), ExtResource("3_fmv7q"), ExtResource("4_4f2v1"), ExtResource("5_43op2"), ExtResource("6_f3xjf"), ExtResource("7_60f46"), ExtResource("8_idpy5"), ExtResource("9_nu7pk"), ExtResource("10_fjjdm"), ExtResource("11_p37hy"), ExtResource("12_vqi24"), ExtResource("13_uqyxn"), ExtResource("14_sfoj3"), ExtResource("15_0hw64"), ExtResource("16_2wfws"), ExtResource("17_k4d8w"), ExtResource("18_6j5dg"), ExtResource("19_qje0x"), ExtResource("20_nb1ec"), ExtResource("21_dbjyd"), ExtResource("22_cs0p7"), ExtResource("23_t4w73"), ExtResource("24_q6p8g"), ExtResource("25_q87ku"), ExtResource("26_t87cs")])
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1703281418]
+modulate = Color(0.05490196, 0.88235295, 0.18039216, 1)
+texture = ExtResource("1_irq5r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1961484491]
+position = Vector2(0.5, -0.5)
+shape = SubResource("RectangleShape2D_fiya0")
+
+[node name="EtkilesimAlani" type="Area2D" parent="." unique_id=779685490]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EtkilesimAlani" unique_id=1737656705]
+position = Vector2(0.5, -6.5)
+shape = SubResource("RectangleShape2D_rsync")
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=1662672937]
+modulate = Color(1, 0, 0, 1)
+offset_left = -43.0
+offset_top = -95.0
+offset_right = 44.0
+offset_bottom = -68.0
+value = 100.0
+
+[node name="PromptYazisi" type="Label" parent="." unique_id=1033998946]
+visible = false
+offset_left = -49.0
+offset_top = -123.0
+offset_right = 47.0
+offset_bottom = -100.0
+text = "F: Vur"
+horizontal_alignment = 1
+
+[connection signal="body_entered" from="EtkilesimAlani" to="." method="_on_etkilesim_alani_body_entered"]
+[connection signal="body_exited" from="EtkilesimAlani" to="." method="_on_etkilesim_alani_body_exited"]

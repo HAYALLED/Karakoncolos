@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://tr0000scn3"]
+
+[ext_resource type="Script" path="res://Script/trait/TraitKeskinSaldiri.gd" id="1_trs00"]
+
+[node name="TraitKeskinSaldiri" type="Node"]
+script = ExtResource("1_trs00")
+kilit_bedeli = 5
+saldiri_aktif = true
+saldiri_degisim = 5
+trait_isim = "Keskin Saldiri"
+trait_aciklama = "Balta hasarin kalici olarak artar. +5 hasar."

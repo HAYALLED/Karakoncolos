@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://rlc3001scn"]
+
+[ext_resource type="Script" uid="uid://dntwfsxmx82k1" path="res://Script/relic/CanliKan.gd" id="1_rlc00"]
+[ext_resource type="Texture2D" uid="uid://dxobff3hkc6uv" path="res://Sprite/denemechest-open.png" id="2_m4uhx"]
+
+[node name="CanliKan" type="Node2D" unique_id=77942045]
+script = ExtResource("1_rlc00")
+relic_isim = "CanliKan"
+relic_aciklama = "Her savas turunda kucuk bir enerji akisi hissedersin."
+tur_basi_enerji_aktif = true
+tur_basi_enerji = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1934254113]
+modulate = Color(1, 0.25, 0, 1)
+texture = ExtResource("2_m4uhx")
+hframes = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=726660903]

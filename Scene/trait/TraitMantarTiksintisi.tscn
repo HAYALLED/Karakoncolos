@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://tr0015scn108"]
+
+[ext_resource type="Script" path="res://Script/trait/TraitMantarTiksintisi.gd" id="1_trs15"]
+
+[node name="TraitMantarTiksintisi" type="Node"]
+script = ExtResource("1_trs15")
+pozitif_mi = false
+normal_cikarma_bedeli = 12
+yapisik_cikarma_bedeli = 25
+mantar_enerji_bonus = -8
+trait_isim = "Mantar Tiksintisi"
+trait_aciklama = "Her mantardan alinan enerji -8 azalir."

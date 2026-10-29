@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dsm4010scn"]
+
+[ext_resource type="Script" uid="uid://dmj65onw52j6i" path="res://Script/enemy/BozKurt.gd" id="1_dsm10"]
+[ext_resource type="Texture2D" uid="uid://drkb80ev72gmh" path="res://Sprite/icon.svg" id="2_1wwx2"]
+
+[node name="BozKurt" type="Node2D" unique_id=900160791]
+script = ExtResource("1_dsm10")
+dusman_isim = "BozKurt"
+max_can = 55
+saldiri = 13
+enerji_cezasi = 20
+odul_listesi = Array[Dictionary]([{
+"kaynak": "yasam_ozu",
+"max": 4,
+"min": 2
+}, {
+"kaynak": "enerji",
+"max": 20,
+"min": 10
+}])
+dusman_aciklama = "Efsanelerde kılavuz, burada bekçi. Hayat ağacını korumak için oradadır."
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=393286629]
+modulate = Color(2.2666645, 0.7922425, 0.7922425, 1)
+texture = ExtResource("2_1wwx2")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1821366465]

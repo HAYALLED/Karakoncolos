@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://pk10tcnsv7c5"]
+
+[ext_resource type="Script" uid="uid://4q3jo0w64vc0" path="res://Script/ana_menu.gd" id="1_sstao"]
+
+[node name="AnaMenu" type="Control" unique_id=943853644]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sstao")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=562567909]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 648.0
+
+[node name="BaslaButonu" type="Button" parent="." unique_id=878356382]
+layout_mode = 0
+offset_left = 494.0
+offset_top = 157.0
+offset_right = 725.0
+offset_bottom = 207.0
+text = "Oyuna Başla"
+
+[node name="CikisButonu" type="Button" parent="." unique_id=81242432]
+layout_mode = 0
+offset_left = 494.0
+offset_top = 224.0
+offset_right = 725.0
+offset_bottom = 274.0
+text = "Çıkış"
+
+[connection signal="pressed" from="BaslaButonu" to="." method="_on_basla_butonu_pressed"]
+[connection signal="pressed" from="CikisButonu" to="." method="_on_cikis_butonu_pressed"]

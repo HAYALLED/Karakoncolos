@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://rlc3008scn"]
+
+[ext_resource type="Script" uid="uid://0o04alasfphp" path="res://Script/relic/YagliSap.gd" id="1_rlc07"]
+[ext_resource type="Texture2D" uid="uid://dxobff3hkc6uv" path="res://Sprite/denemechest-open.png" id="2_tky3l"]
+
+[node name="YagliSap" type="Node2D" unique_id=1305630931]
+script = ExtResource("1_rlc07")
+relic_isim = "YagliSap"
+relic_aciklama = "Yagli sap vurusu kolaylastirir. -2"
+vurus_maliyet_aktif = true
+vurus_maliyet_degisim = -2
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=134652813]
+modulate = Color(1, 0.25, 0, 1)
+texture = ExtResource("2_tky3l")
+hframes = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1633380901]

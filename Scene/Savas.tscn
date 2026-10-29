@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://4euoscmjvdf2"]
+
+[ext_resource type="Script" uid="uid://qmbm7gq1i43o" path="res://Script/Savas.gd" id="1_6063p"]
+
+[node name="Savas" type="Node2D" unique_id=1018285593]
+script = ExtResource("1_6063p")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=1690312670]
+offset_right = 1159.0
+offset_bottom = 657.0
+
+[node name="BaslikYazisi" type="Label" parent="." unique_id=236324863]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="LogYazisi" type="Label" parent="." unique_id=276587814]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="KarakoncolosContainer" type="Node2D" parent="." unique_id=850496980]
+position = Vector2(124, 345)
+
+[node name="DusmanContainer" type="Node2D" parent="." unique_id=1311523957]
+position = Vector2(943, 345)

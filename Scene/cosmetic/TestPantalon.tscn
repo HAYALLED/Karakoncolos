@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://ko00002scn33"]
+
+[ext_resource type="Script" uid="uid://bsof1r7peichd" path="res://Script/cosmetic/TestPantalon.gd" id="1_koz02"]
+[ext_resource type="Texture2D" uid="uid://drkb80ev72gmh" path="res://Sprite/icon.svg" id="2_yc0wm"]
+
+[node name="TestPantalon" type="Node2D" unique_id=1427045430]
+script = ExtResource("1_koz02")
+kozmetik_isim = "Test Pantalon"
+slot = "pantalon"
+on_texture = ExtResource("2_yc0wm")

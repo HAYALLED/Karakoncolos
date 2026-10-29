@@ -1,0 +1,108 @@
+[gd_scene format=3 uid="uid://crme25qwsahqp"]
+
+[ext_resource type="PackedScene" uid="uid://cvyb7acyfmkor" path="res://Scene/player.tscn" id="1_56fbb"]
+[ext_resource type="Script" uid="uid://dprsco4vetbqn" path="res://Script/yer_ustu.gd" id="1_wjt1q"]
+[ext_resource type="Texture2D" uid="uid://drkb80ev72gmh" path="res://Sprite/icon.svg" id="2_wjt1q"]
+[ext_resource type="PackedScene" uid="uid://bintjlqvc1oqi" path="res://Scene/mantar.tscn" id="4_3thpc"]
+[ext_resource type="PackedScene" uid="uid://qprtitxivb4c" path="res://Scene/magara_girisi.tscn" id="5_67kgp"]
+[ext_resource type="PackedScene" uid="uid://bu6ghemidy38u" path="res://Scene/tas.tscn" id="6_qaxem"]
+[ext_resource type="PackedScene" uid="uid://iymxgqxo6k8f" path="res://Scene/odun.tscn" id="7_kjxdf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3thpc"]
+size = Vector2(2438, 149)
+
+[node name="YerUstu" type="Node2D" unique_id=1797154595]
+script = ExtResource("1_wjt1q")
+
+[node name="Karakoncolos" parent="." unique_id=723900462 instance=ExtResource("1_56fbb")]
+position = Vector2(536, 288)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=114735032]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1240542749]
+position = Vector2(1201, 601.5)
+scale = Vector2(18.984375, 1.1953125)
+texture = ExtResource("2_wjt1q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1823048921]
+position = Vector2(1208, 601)
+shape = SubResource("RectangleShape2D_3thpc")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=633317654]
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer" unique_id=1722593958]
+offset_left = 484.0
+offset_top = 12.0
+offset_right = 598.0
+offset_bottom = 39.0
+value = 100.0
+show_percentage = false
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=921108860]
+visible = false
+offset_left = 608.0
+offset_top = 12.0
+offset_right = 648.0
+offset_bottom = 35.0
+
+[node name="Timer" type="Timer" parent="." unique_id=1521656989]
+autostart = true
+
+[node name="Mantar" parent="." unique_id=567712394 instance=ExtResource("4_3thpc")]
+position = Vector2(126, 510)
+
+[node name="Mantar2" parent="." unique_id=1752980375 instance=ExtResource("4_3thpc")]
+position = Vector2(257, 512)
+
+[node name="MagaraGirisi" parent="." unique_id=1003974218 instance=ExtResource("5_67kgp")]
+position = Vector2(2290, 423)
+
+[node name="Mantar3" parent="." unique_id=524763532 instance=ExtResource("4_3thpc")]
+position = Vector2(960, 508)
+
+[node name="Mantar4" parent="." unique_id=1332719241 instance=ExtResource("4_3thpc")]
+position = Vector2(1295, 510)
+
+[node name="Mantar5" parent="." unique_id=918748121 instance=ExtResource("4_3thpc")]
+position = Vector2(1532, 501)
+
+[node name="Mantar6" parent="." unique_id=232167319 instance=ExtResource("4_3thpc")]
+position = Vector2(1949, 505)
+
+[node name="Tas" parent="." unique_id=728009754 instance=ExtResource("6_qaxem")]
+position = Vector2(838, 512)
+
+[node name="Tas2" parent="." unique_id=1501634665 instance=ExtResource("6_qaxem")]
+position = Vector2(1086, 512)
+
+[node name="Tas3" parent="." unique_id=151724109 instance=ExtResource("6_qaxem")]
+position = Vector2(1685, 507)
+
+[node name="Tas4" parent="." unique_id=1375758791 instance=ExtResource("6_qaxem")]
+position = Vector2(1183, 510)
+
+[node name="Tas5" parent="." unique_id=18522988 instance=ExtResource("6_qaxem")]
+position = Vector2(1430, 510)
+
+[node name="Tas6" parent="." unique_id=445673354 instance=ExtResource("7_kjxdf")]
+position = Vector2(1048, 459)
+
+[node name="Tas7" parent="." unique_id=253729815 instance=ExtResource("7_kjxdf")]
+position = Vector2(1243, 459)
+
+[node name="Tas8" parent="." unique_id=1830258654 instance=ExtResource("7_kjxdf")]
+position = Vector2(1369, 458)
+
+[node name="Tas9" parent="." unique_id=806239194 instance=ExtResource("7_kjxdf")]
+position = Vector2(1620, 472)
+
+[node name="Tas10" parent="." unique_id=1977703366 instance=ExtResource("7_kjxdf")]
+position = Vector2(1801, 459)
+
+[node name="Tas11" parent="." unique_id=563152530 instance=ExtResource("7_kjxdf")]
+position = Vector2(2042, 455)
+
+[node name="Tas12" parent="." unique_id=173982289 instance=ExtResource("7_kjxdf")]
+position = Vector2(931, 438)
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

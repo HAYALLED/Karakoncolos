@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://tr001ascn66"]
+
+[ext_resource type="Script" uid="uid://ceamad8orrf0j" path="res://Script/trait/TraitAgirAdim.gd" id="1_trs09"]
+
+[node name="TraitAgirAdim" type="Node" unique_id=1535545249]
+script = ExtResource("1_trs09")
+trait_isim = "Agir Adim"
+trait_aciklama = "Yuzeyde hareket hizin azalir."
+pozitif_mi = false
+normal_cikarma_bedeli = 12
+yapisik_cikarma_bedeli = 25
+hareket_hizi_bonus = -120.0

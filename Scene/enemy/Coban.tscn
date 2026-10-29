@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dsm4001scn"]
+
+[ext_resource type="Script" uid="uid://dck3x613wmcee" path="res://Script/enemy/Coban.gd" id="1_dsm01"]
+[ext_resource type="Texture2D" uid="uid://drkb80ev72gmh" path="res://Sprite/icon.svg" id="2_8nff5"]
+
+[node name="Coban" type="Node2D" unique_id=1792126267]
+script = ExtResource("1_dsm01")
+dusman_isim = "Coban"
+max_can = 25
+enerji_cezasi = 12
+odul_listesi = Array[Dictionary]([{
+"kaynak": "odun",
+"max": 2,
+"min": 1
+}, {
+"kaynak": "mantar",
+"max": 2,
+"min": 0
+}])
+dusman_aciklama = "Koylarından birini kaybetti. Bunu karakoncolosun üstüne yıkmak istiyor."
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1172787370]
+modulate = Color(2.2666645, 0.7922425, 0.7922425, 1)
+texture = ExtResource("2_8nff5")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1320065644]

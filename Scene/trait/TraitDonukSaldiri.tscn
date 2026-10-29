@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://tr0001scn10"]
+
+[ext_resource type="Script" path="res://Script/trait/TraitDonukSaldiri.gd" id="1_trs01"]
+
+[node name="TraitDonukSaldiri" type="Node"]
+script = ExtResource("1_trs01")
+pozitif_mi = false
+normal_cikarma_bedeli = 10
+yapisik_cikarma_bedeli = 20
+saldiri_aktif = true
+saldiri_degisim = -3
+trait_isim = "Donuk Saldiri"
+trait_aciklama = "Balta hasarin azalir. -3 hasar."

@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://tr0003scn24"]
+
+[ext_resource type="Script" path="res://Script/trait/TraitCabukYorilan.gd" id="1_trs03"]
+
+[node name="TraitCabukYorilan" type="Node"]
+script = ExtResource("1_trs03")
+pozitif_mi = false
+normal_cikarma_bedeli = 12
+yapisik_cikarma_bedeli = 25
+vurus_maliyet_aktif = true
+vurus_maliyet_degisim = 5
+trait_isim = "Cabuk Yorilan"
+trait_aciklama = "Her vurusta +5 enerji harcanir."

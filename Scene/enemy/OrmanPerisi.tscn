@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dsm4007scn"]
+
+[ext_resource type="Script" uid="uid://dr6a0gpudesk0" path="res://Script/enemy/OrmanPerisi.gd" id="1_dsm07"]
+[ext_resource type="Texture2D" uid="uid://drkb80ev72gmh" path="res://Sprite/icon.svg" id="2_yvk5e"]
+
+[node name="OrmanPerisi" type="Node2D" unique_id=1116656776]
+script = ExtResource("1_dsm07")
+dusman_isim = "OrmanPerisi"
+max_can = 28
+saldiri = 7
+enerji_cezasi = 20
+odul_listesi = Array[Dictionary]([{
+"kaynak": "yasam_ozu",
+"max": 3,
+"min": 1
+}, {
+"kaynak": "mantar",
+"max": 2,
+"min": 1
+}])
+dusman_aciklama = "Hayat ağacının kesildiğini hissetti. Kollarını ormanın köküne gömdü ve yürüdü."
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1882298637]
+modulate = Color(2.2666645, 0.7922425, 0.7922425, 1)
+texture = ExtResource("2_yvk5e")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=467993084]

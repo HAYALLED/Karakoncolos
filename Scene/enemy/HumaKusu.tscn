@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dsm4011scn"]
+
+[ext_resource type="Script" uid="uid://da7or0kjgvey7" path="res://Script/enemy/HumaKusu.gd" id="1_dsm11"]
+[ext_resource type="Texture2D" uid="uid://drkb80ev72gmh" path="res://Sprite/icon.svg" id="2_jsd5r"]
+
+[node name="HumaKusu" type="Node2D" unique_id=146421392]
+script = ExtResource("1_dsm11")
+dusman_isim = "HumaKusu"
+max_can = 45
+saldiri = 11
+enerji_cezasi = 25
+odul_listesi = Array[Dictionary]([{
+"kaynak": "yasam_ozu",
+"max": 5,
+"min": 3
+}, {
+"kaynak": "enerji",
+"max": 35,
+"min": 25
+}, {
+"kaynak": "mantar",
+"max": 2,
+"min": 1
+}])
+dusman_aciklama = "Gölgesi kimin üstüne düşerse o uğurlu sayılır. Ama o gölgenin altında durmak bambaşka bir şeydir."
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1956828549]
+modulate = Color(2.2666645, 0.7922425, 0.7922425, 1)
+texture = ExtResource("2_jsd5r")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=683647416]

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://ko00003scn46"]
+
+[ext_resource type="Script" uid="uid://m3p0r43am88j" path="res://Script/cosmetic/TestAyakkabi.gd" id="1_koz03"]
+[ext_resource type="Texture2D" uid="uid://drkb80ev72gmh" path="res://Sprite/icon.svg" id="2_17wsx"]
+
+[node name="TestAyakkabi" type="Node2D" unique_id=685867193]
+script = ExtResource("1_koz03")
+kozmetik_isim = "Test Ayakkabi"
+slot = "ayakkabi"
+on_texture = ExtResource("2_17wsx")

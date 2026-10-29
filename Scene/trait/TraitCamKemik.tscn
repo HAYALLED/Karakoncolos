@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://tr0005scn38"]
+
+[ext_resource type="Script" path="res://Script/trait/TraitCamKemik.gd" id="1_trs05"]
+
+[node name="TraitCamKemik" type="Node"]
+script = ExtResource("1_trs05")
+pozitif_mi = false
+normal_cikarma_bedeli = 15
+yapisik_cikarma_bedeli = 30
+hasar_degisim_yuzde = -0.25
+trait_isim = "Cam Kemik"
+trait_aciklama = "Savasta gelen hasar yuzde 25 daha fazla batar."

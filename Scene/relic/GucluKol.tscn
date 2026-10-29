@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://rlc3011scn"]
+
+[ext_resource type="Script" uid="uid://c7lj10nhkhka" path="res://Script/relic/GucluKol.gd" id="1_rlc10"]
+[ext_resource type="Texture2D" uid="uid://dxobff3hkc6uv" path="res://Sprite/denemechest-open.png" id="2_lu8ga"]
+
+[node name="GucluKol" type="Node2D" unique_id=1647419128]
+script = ExtResource("1_rlc10")
+relic_isim = "GucluKol"
+relic_aciklama = "Guclu kollar daha derin keser. +2"
+saldiri_aktif = true
+saldiri_degisim = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=401033517]
+modulate = Color(1, 0.25, 0, 1)
+texture = ExtResource("2_lu8ga")
+hframes = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1843053439]

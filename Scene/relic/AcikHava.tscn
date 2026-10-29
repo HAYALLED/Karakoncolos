@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://rlc3004scn"]
+
+[ext_resource type="Script" uid="uid://dh63b8i2yyv6p" path="res://Script/relic/AcikHava.gd" id="1_rlc03"]
+[ext_resource type="Texture2D" uid="uid://dxobff3hkc6uv" path="res://Sprite/denemechest-open.png" id="2_atles"]
+
+[node name="AcikHava" type="Node2D" unique_id=1409564068]
+script = ExtResource("1_rlc03")
+relic_isim = "AcikHava"
+relic_aciklama = "Acik hava karakoncolosu canlandirir. +15"
+yuzey_enerji_aktif = true
+yuzey_cikista_enerji = 15
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1852802904]
+modulate = Color(1, 0.25, 0, 1)
+texture = ExtResource("2_atles")
+hframes = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=509949141]

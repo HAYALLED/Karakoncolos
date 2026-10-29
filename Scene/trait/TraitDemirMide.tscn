@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://tr0002scn17"]
+
+[ext_resource type="Script" path="res://Script/trait/TraitDemirMide.gd" id="1_trs02"]
+
+[node name="TraitDemirMide" type="Node"]
+script = ExtResource("1_trs02")
+kilit_bedeli = 8
+vurus_maliyet_aktif = true
+vurus_maliyet_degisim = -3
+trait_isim = "Demir Mide"
+trait_aciklama = "Her vurusta -3 enerji harcanir."

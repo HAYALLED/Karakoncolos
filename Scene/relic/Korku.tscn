@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://rlc3021scn"]
+
+[ext_resource type="Script" uid="uid://cx2k06kaila4d" path="res://Script/relic/Korku.gd" id="1_rlc20"]
+[ext_resource type="Texture2D" uid="uid://dxobff3hkc6uv" path="res://Sprite/denemechest-open.png" id="2_2yqpy"]
+
+[node name="Korku" type="Node2D" unique_id=243498539]
+script = ExtResource("1_rlc20")
+relic_isim = "Korku"
+relic_aciklama = "Vurum maliyeti -5 ama savas turunda -3 enerji."
+tur_basi_enerji_aktif = true
+tur_basi_enerji = -3
+vurus_maliyet_aktif = true
+vurus_maliyet_degisim = -5
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1265980620]
+modulate = Color(1, 0.25, 0, 1)
+texture = ExtResource("2_2yqpy")
+hframes = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=309367317]

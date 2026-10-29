@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://h5ug1dnjqay7"]
+
+[ext_resource type="Script" uid="uid://bd6tu16xsyc2s" path="res://Script/Tuccar.gd" id="1_0rxhl"]
+[ext_resource type="Texture2D" uid="uid://drkb80ev72gmh" path="res://Sprite/icon.svg" id="2_636ue"]
+[ext_resource type="PackedScene" uid="uid://ko00003scn46" path="res://Scene/cosmetic/TestAyakkabi.tscn" id="2_q2asa"]
+[ext_resource type="PackedScene" uid="uid://ko00001scn20" path="res://Scene/cosmetic/TestGovde.tscn" id="3_jrxs6"]
+[ext_resource type="PackedScene" uid="uid://ko00002scn33" path="res://Scene/cosmetic/TestPantalon.tscn" id="4_ogmqt"]
+[ext_resource type="PackedScene" uid="uid://ko00000scn7" path="res://Scene/cosmetic/TestSapka.tscn" id="5_soalw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qxl38"]
+size = Vector2(128, 127)
+
+[node name="Tuccar" type="Area2D" unique_id=839122142]
+script = ExtResource("1_0rxhl")
+kozmetik_havuzu = Array[PackedScene]([ExtResource("2_q2asa"), ExtResource("3_jrxs6"), ExtResource("4_ogmqt"), ExtResource("5_soalw")])
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1298391457]
+modulate = Color(0.71809363, 0.79977137, 0.0697341, 1)
+position = Vector2(66, 66)
+texture = ExtResource("2_636ue")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=962846708]
+position = Vector2(67, 66.5)
+shape = SubResource("RectangleShape2D_qxl38")
+
+[node name="PromptYazisi" type="Label" parent="." unique_id=1847051362]
+offset_left = 6.0
+offset_top = -19.0
+offset_right = 75.0
+offset_bottom = 4.0
+text = "F: Tüccar"
+
+[node name="TuccarArayuz" type="CanvasLayer" parent="." unique_id=162015621]
+
+[node name="TuccarPaneli" type="Panel" parent="TuccarArayuz" unique_id=1676731869]
+anchors_preset = -1
+anchor_right = 0.4001736
+anchor_bottom = 0.41975307
+offset_left = 340.0
+offset_top = 197.0
+offset_right = 380.0
+offset_bottom = 237.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ListeKutusu" type="VBoxContainer" parent="TuccarArayuz/TuccarPaneli" unique_id=1009515450]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ParaYazisi" type="Label" parent="TuccarArayuz/TuccarPaneli" unique_id=1916712047]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.007984032
+anchor_top = 0.7724359
+anchor_right = 0.007984032
+anchor_bottom = 0.7724359
+offset_left = -1.0
+offset_top = 45.0
+offset_right = 120.0
+offset_bottom = 68.0
+text = "✦ Yaşam Özü: 0"
+metadata/_edit_use_anchors_ = true
+
+[node name="BilgiYazisi" type="Label" parent="TuccarArayuz/TuccarPaneli" unique_id=997347651]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.007984032
+anchor_top = 0.7724359
+anchor_right = 0.007984032
+anchor_bottom = 0.7724359
+offset_top = 23.0
+offset_right = 119.0
+offset_bottom = 46.0
+text = "kontrol ipuçları"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://tr0006scn45"]
+
+[ext_resource type="Script" path="res://Script/trait/TraitKanOfkesi.gd" id="1_trs06"]
+
+[node name="TraitKanOfkesi" type="Node"]
+script = ExtResource("1_trs06")
+kilit_bedeli = 8
+savas_ekstra_hasar = 5
+trait_isim = "Kan Ofkesi"
+trait_aciklama = "Savasta +5 ekstra hasar verirsin."

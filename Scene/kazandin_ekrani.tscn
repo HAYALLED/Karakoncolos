@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://cp2c0gwaan318"]
+
+[ext_resource type="Script" uid="uid://2t4hlwgsbxsl" path="res://Script/kazandin_ekrani.gd" id="1_iexrf"]
+
+[node name="KazandinEkrani" type="Control" unique_id=230094738]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_iexrf")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1258553461]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_right = 1197.0
+offset_bottom = 675.0
+
+[node name="Label" type="Label" parent="." unique_id=613665679]
+layout_mode = 0
+offset_left = 402.0
+offset_top = 274.0
+offset_right = 659.0
+offset_bottom = 297.0
+text = "KÖKÜ KESTİN! DÖNGÜYÜ KIRDIN!"
+
+[node name="MenuyeDonButonu" type="Button" parent="." unique_id=1847871868]
+layout_mode = 0
+offset_left = 466.0
+offset_top = 316.0
+offset_right = 607.0
+offset_bottom = 347.0
+text = "Ana Menüye Dön"
+
+[connection signal="pressed" from="MenuyeDonButonu" to="." method="_on_menuye_don_butonu_pressed"]

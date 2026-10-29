@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://rlc3003scn"]
+
+[ext_resource type="Script" uid="uid://blx4tb4yd8vlg" path="res://Script/relic/SabahRuzu.gd" id="1_rlc02"]
+[ext_resource type="Texture2D" uid="uid://dxobff3hkc6uv" path="res://Sprite/denemechest-open.png" id="2_16pa7"]
+
+[node name="SabahRuzu" type="Node2D" unique_id=881349703]
+script = ExtResource("1_rlc02")
+relic_isim = "SabahRuzu"
+relic_aciklama = "Yuzeye ciktiginda taze hava enerji verir. +20"
+yuzey_enerji_aktif = true
+yuzey_cikista_enerji = 20
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1598590340]
+modulate = Color(1, 0.25, 0, 1)
+texture = ExtResource("2_16pa7")
+hframes = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1232986441]

@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dsm4003scn"]
+
+[ext_resource type="Script" uid="uid://cl75w43i7ldvy" path="res://Script/enemy/KoyBekcisi.gd" id="1_dsm03"]
+[ext_resource type="Texture2D" uid="uid://drkb80ev72gmh" path="res://Sprite/icon.svg" id="2_k27ya"]
+
+[node name="KoyBekcisi" type="Node2D" unique_id=1406565389]
+script = ExtResource("1_dsm03")
+dusman_isim = "KoyBekcisi"
+max_can = 40
+saldiri = 7
+enerji_cezasi = 18
+odul_listesi = Array[Dictionary]([{
+"kaynak": "tas",
+"max": 2,
+"min": 1
+}, {
+"kaynak": "odun",
+"max": 2,
+"min": 1
+}])
+dusman_aciklama = "Görevi köyü korumak. Ama bu sefer karşısındaki sürüden farklı bir şey."
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1456458365]
+modulate = Color(2.2666645, 0.7922425, 0.7922425, 1)
+texture = ExtResource("2_k27ya")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=443240003]

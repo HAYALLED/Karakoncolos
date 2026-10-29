@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b1t4m3d6ugyn"]
+
+[ext_resource type="Script" uid="uid://do1vxmtffgqq3" path="res://Script/global.gd" id="1_6q3x5"]
+
+[node name="Global" type="Node" unique_id=14305238]
+script = ExtResource("1_6q3x5")
+enerji = 0
+kok_baslangic_cani = 1000
+gece_suresi = 10

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://gby8u7r2r4l5"]
+
+[ext_resource type="Script" uid="uid://d1uqy3uslsohe" path="res://Script/Traityoneticisi.gd" id="1_foiie"]
+[ext_resource type="PackedScene" uid="uid://tr001ascn66" path="res://Scene/trait/TraitAgirAdim.tscn" id="2_t3mrx"]
+[ext_resource type="PackedScene" uid="uid://tr0003scn24" path="res://Scene/trait/TraitCabukYorilan.tscn" id="3_x8ekv"]
+[ext_resource type="PackedScene" uid="uid://tr0005scn38" path="res://Scene/trait/TraitCamKemik.tscn" id="4_2jjq2"]
+[ext_resource type="PackedScene" uid="uid://tr0004scn31" path="res://Scene/trait/TraitCelikDeri.tscn" id="5_omir5"]
+[ext_resource type="PackedScene" uid="uid://tr0002scn17" path="res://Scene/trait/TraitDemirMide.tscn" id="6_5op7y"]
+[ext_resource type="PackedScene" uid="uid://tr0010scn73" path="res://Scene/trait/TraitDodgeSanatcisi.tscn" id="7_gew7m"]
+[ext_resource type="PackedScene" uid="uid://tr0001scn10" path="res://Scene/trait/TraitDonukSaldiri.tscn" id="8_w3xb1"]
+[ext_resource type="PackedScene" uid="uid://tr0013scoa4" path="res://Scene/trait/TraitEnerjiSizintisi.tscn" id="9_d1rkn"]
+[ext_resource type="PackedScene" uid="uid://tr0008scn6a" path="res://Scene/trait/TraitGolgeAdim.tscn" id="10_6a4pp"]
+[ext_resource type="PackedScene" uid="uid://tr0011scn80" path="res://Scene/trait/TraitHantal.tscn" id="11_ynwvu"]
+[ext_resource type="PackedScene" uid="uid://tr0006scn45" path="res://Scene/trait/TraitKanOfkesi.tscn" id="12_jg3cb"]
+[ext_resource type="PackedScene" uid="uid://tr0012scn87" path="res://Scene/trait/TraitKanTadi.tscn" id="13_fqx4r"]
+[ext_resource type="PackedScene" uid="uid://tr0000scn3" path="res://Scene/trait/TraitKeskinSaldiri.tscn" id="14_vnx03"]
+[ext_resource type="PackedScene" uid="uid://tr0007scn52" path="res://Scene/trait/TraitKorkak.tscn" id="15_ttw3i"]
+[ext_resource type="PackedScene" uid="uid://tr0014scn101" path="res://Scene/trait/TraitMantarSever.tscn" id="16_kd7h1"]
+[ext_resource type="PackedScene" uid="uid://tr0015scn108" path="res://Scene/trait/TraitMantarTiksintisi.tscn" id="17_c7rdd"]
+
+[node name="TraitYoneticisi" type="Node" unique_id=19416012]
+script = ExtResource("1_foiie")
+trait_havuzu = Array[PackedScene]([ExtResource("2_t3mrx"), ExtResource("3_x8ekv"), ExtResource("4_2jjq2"), ExtResource("5_omir5"), ExtResource("6_5op7y"), ExtResource("7_gew7m"), ExtResource("8_w3xb1"), ExtResource("9_d1rkn"), ExtResource("10_6a4pp"), ExtResource("11_ynwvu"), ExtResource("12_jg3cb"), ExtResource("13_fqx4r"), ExtResource("14_vnx03"), ExtResource("15_ttw3i"), ExtResource("16_kd7h1"), ExtResource("17_c7rdd")])

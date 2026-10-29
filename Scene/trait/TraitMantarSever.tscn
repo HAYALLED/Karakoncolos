@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://tr0014scn101"]
+
+[ext_resource type="Script" path="res://Script/trait/TraitMantarSever.gd" id="1_trs14"]
+
+[node name="TraitMantarSever" type="Node"]
+script = ExtResource("1_trs14")
+kilit_bedeli = 7
+mantar_enerji_bonus = 10
+trait_isim = "Mantar Sever"
+trait_aciklama = "Her mantar +10 ekstra enerji verir."

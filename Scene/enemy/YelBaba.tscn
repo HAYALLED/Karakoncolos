@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dsm401ascn"]
+
+[ext_resource type="Script" uid="uid://dnf7fegxy5jbp" path="res://Script/enemy/YelBaba.gd" id="1_dsm09"]
+[ext_resource type="Texture2D" uid="uid://drkb80ev72gmh" path="res://Sprite/icon.svg" id="2_g73pa"]
+
+[node name="YelBaba" type="Node2D" unique_id=1222722758]
+script = ExtResource("1_dsm09")
+dusman_isim = "YelBaba"
+max_can = 35
+saldiri = 10
+enerji_cezasi = 22
+odul_listesi = Array[Dictionary]([{
+"kaynak": "enerji",
+"max": 30,
+"min": 20
+}, {
+"kaynak": "yasam_ozu",
+"max": 2,
+"min": 1
+}])
+dusman_aciklama = "Rüzgar kesildi ve ormana bir ağırlık çöktü. Yel Baba çıktı."
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1154211294]
+modulate = Color(2.2666645, 0.7922425, 0.7922425, 1)
+texture = ExtResource("2_g73pa")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=637340961]

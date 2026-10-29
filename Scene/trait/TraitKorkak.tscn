@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://tr0007scn52"]
+
+[ext_resource type="Script" path="res://Script/trait/TraitKorkak.gd" id="1_trs07"]
+
+[node name="TraitKorkak" type="Node"]
+script = ExtResource("1_trs07")
+pozitif_mi = false
+normal_cikarma_bedeli = 10
+yapisik_cikarma_bedeli = 22
+savas_ekstra_hasar = -3
+trait_isim = "Korkak"
+trait_aciklama = "Savasta verdigin hasar -3 azalir."

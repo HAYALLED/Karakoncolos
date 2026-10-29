@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://rlc3012scn"]
+
+[ext_resource type="Script" uid="uid://bjmxfbedo1sqr" path="res://Script/relic/DerinKes.gd" id="1_rlc11"]
+[ext_resource type="Texture2D" uid="uid://dxobff3hkc6uv" path="res://Sprite/denemechest-open.png" id="2_ssxx1"]
+
+[node name="DerinKes" type="Node2D" unique_id=1536841362]
+script = ExtResource("1_rlc11")
+relic_isim = "DerinKes"
+relic_aciklama = "Derin yaralar acar. +5"
+saldiri_aktif = true
+saldiri_degisim = 5
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=468625091]
+modulate = Color(1, 0.25, 0, 1)
+texture = ExtResource("2_ssxx1")
+hframes = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1624345251]

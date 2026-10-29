@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://rlc302ascn"]
+
+[ext_resource type="Script" uid="uid://blio82gcokka1" path="res://Script/relic/EnerjiBomba.gd" id="1_rlc18"]
+[ext_resource type="Texture2D" uid="uid://dxobff3hkc6uv" path="res://Sprite/denemechest-open.png" id="2_kisvf"]
+
+[node name="EnerjiBomba" type="Node2D" unique_id=1050832413]
+script = ExtResource("1_rlc18")
+relic_isim = "EnerjiBomba"
+relic_aciklama = "Cikista +35 enerji patlar, donuste -15 sonersin."
+yuzey_enerji_aktif = true
+yuzey_cikista_enerji = 35
+yuzey_donuste_enerji = -15
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=188339759]
+modulate = Color(1, 0.25, 0, 1)
+texture = ExtResource("2_kisvf")
+hframes = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2013708832]
